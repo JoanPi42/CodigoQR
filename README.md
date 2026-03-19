@@ -10,14 +10,14 @@ Instala las librerías necesarias antes de ejecutar los scripts:
 pip install qrcode[pil] pillow
 ```
 
-## Uso del script interactivo (qr_input.py)
+## Uso del script interactivo (CodigoQR_input.py)
 
 Este script solicita al usuario que ingrese la URL o texto directamente en la ejecución del programa.
 
 ```bash
 $ python qr_input.py
 Ingresa la URL: https://example.com
-Codigo QR generado correctamente en CodigoQR.png
+Codigo QR generado correctamente
 ```
 
 - Ideal para uso rápido
@@ -26,13 +26,13 @@ Codigo QR generado correctamente en CodigoQR.png
 
 - Fácil de probar para principiantes
 
-## Uso del script con argumentos de terminal (qr_argv.py)
+## Uso del script con argumentos de terminal (CodigoQR_sys.py)
 
 Este script permite pasar la URL o texto directamente desde la terminal usando sys.argv.
 
 ```bash
-$ python qr_argv.py https://example.com
-Codigo QR generado correctamente en CodigoQR.png
+$ python qr_argv.py https://example.com  #esto es desde la terminal en si
+Codigo QR generado correctamente
 ```
 - Ideal para automatización
 
@@ -54,23 +54,6 @@ Codigo QR generado correctamente en CodigoQR.png
 
 ## Ejemplos de QR generados
 
-Dentro de la carpeta outputs/ puedes incluir ejemplos generados con ambos scripts. Por ejemplo:
-
-QR generado con qr_input.py
-
-QR generado con qr_argv.py
+Dentro de la carpeta outputs/ puedes ver ejemplos generados con ambos scripts.
 
 Tip: Cambia los nombres de las imágenes según los archivos que generes en tu carpeta outputs/.
-
-##Estructura recomendada del repositorio
-
-```bash
-
-QR-Generator/
-├─ qr_input.py         # script interactivo
-├─ qr_argv.py          # script con argumentos de terminal
-├─ outputs/            # ejemplos de QR generados
-│   ├─ qr_input_example.png
-│   └─ qr_argv_example.png
-└─ README.md           # este archivo
-```
